@@ -1,0 +1,35 @@
+{
+  "name": "projeto-valtemir-electron",
+  "version": "1.0.0",
+  "description": "Aplicação desktop com Electron",
+  "main": "src/main.js",
+  "homepage": "./",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder",
+    "build-win": "electron-builder --win",
+    "build-mac": "electron-builder --mac",
+    "build-linux": "electron-builder --linux"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4"
+  },
+  "build": {
+    "appId": "com.valtemir.electron",
+    "productName": "Projeto Valtemir",
+    "directories": {
+      "buildResources": "resources"
+    },
+    "files": [
+      "src/**/*",
+      "public/**/*",
+      "node_modules/**/*"
+    ]
+  }
+}
